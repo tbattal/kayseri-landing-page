@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayseri - Anadolu'nun Kalbi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <svg class="logo-icon" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Erciyes Dağı Silüeti -->
+                    <path d="M20 100 L35 70 L50 85 L60 55 L75 75 L85 50 L100 100 Z" fill="currentColor" opacity="0.15"/>
+                    <path d="M30 100 L45 65 L60 80 L70 45 L85 70 L95 100 Z" fill="currentColor" opacity="0.25"/>
+                    <!-- Kar tepesi -->
+                    <path d="M55 30 L60 45 L70 45 L65 50 L70 55 L60 55 L55 65 L50 55 L40 55 L45 50 L40 45 L50 45 Z" fill="currentColor" opacity="0.4"/>
+                    <!-- Dış çerçeve -->
+                    <circle cx="60" cy="60" r="52" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+                    <!-- Mantı şekilleri (sembolik) -->
+                    <circle cx="25" cy="95" r="6" fill="currentColor" opacity="0.3"/>
+                    <circle cx="95" cy="95" r="6" fill="currentColor" opacity="0.3"/>
+                    <circle cx="60" cy="105" r="5" fill="currentColor" opacity="0.3"/>
+                </svg>
+                <span class="brand-text">KAYSERİ</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="#about" class="nav-link">Hakkında</a></li>
+                <li><a href="#history" class="nav-link">Tarih</a></li>
+                <li><a href="#economy" class="nav-link">Ekonomi</a></li>
+                <li><a href="#cuisine" class="nav-link">Mutfağı</a></li>
+                <li><a href="#places" class="nav-link">Gezilecek Yerler</a></li>
+                <li><a href="#universities" class="nav-link">Üniversiteler</a></li>
+                <li><a href="#culture" class="nav-link">Kültür</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-bg-image" style="background-image: url('https://images.pexels.com/photos/15534365/pexels-photo-15534365.jpeg?auto=compress&cs=tinysrgb&w=1920')"></div>
+            <div class="gradient-overlay"></div>
+            <div class="mountain-silhouette">
+                <svg viewBox="0 0 1440 600" preserveAspectRatio="none">
+                    <path d="M0 600 L0 400 Q200 250 400 350 Q600 200 720 150 Q840 100 1000 250 Q1200 350 1440 300 L1440 600 Z" fill="rgba(139, 90, 43, 0.1)"/>
+                    <path d="M0 600 L0 450 Q150 350 300 400 Q450 300 600 350 Q750 250 900 300 Q1050 350 1200 400 Q1350 450 1440 400 L1440 600 Z" fill="rgba(139, 90, 43, 0.15)"/>
+                    <path d="M0 600 L0 500 Q200 450 400 480 Q600 420 800 450 Q1000 400 1200 480 Q1350 520 1440 480 L1440 600 Z" fill="rgba(139, 90, 43, 0.2)"/>
+                </svg>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>Türkiye'nin 15. Büyük ili</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Anadolu'nun</span>
+                    <span class="title-line title-highlight">Kalbi</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Binlerce yıllık medeniyet birikimi, modern sanayi ve zengin kültürü bir arada yaşayan şehir
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">1.4M+</span>
+                        <span class="stat-label">Nüfus</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">%8.9</span>
+                        <span class="stat-label">İşsizlik</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">$5.2B</span>
+                        <span class="stat-label">Dış Ticaret</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#about" class="btn btn-primary">Keşfetmeye Başla</a>
+                    <a href="#places" class="btn btn-outline">Gezilecek Yerler</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Aşağı Kaydır</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Temel Bilgiler</span>
+                <h2 class="section-title">Kayseri Hakkında</h2>
+                <p class="section-subtitle">İç Anadolu'nun stratejik ve tarihi şehri</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="32" cy="32" r="28"/>
+                            <path d="M32 16v32M16 32h32"/>
+                        </svg>
+                    </div>
+                    <h3>Konum</h3>
+                    <p>İç Anadolu Bölgesi'nde yer alan Kayseri, Türkiye'nin en önemli şehirlerinden biri olarak tarihi boyunca stratejik bir konumda bulunmuştur.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="8" y="16" width="48" height="36" rx="4"/>
+                            <path d="M8 24h56M20 24v28M32 24v28M44 24v28"/>
+                        </svg>
+                    </div>
+                    <h3>Nüfus</h3>
+                    <p>2025 yılı itibarıyla <strong>1.452.458</strong> kişilik nüfusuyla Türkiye'nin en kalabalık 15. ili. Erkek: 725.633, Kadın: 726.825</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M32 8 L56 20 L56 52 L32 56 L8 52 L8 20 Z"/>
+                            <path d="M32 8v48M8 20l24 12M56 20l-24 12"/>
+                        </svg>
+                    </div>
+                    <h3>Yüzölçümü</h3>
+                    <p>Türkiye'nin <strong>8. büyük ili</strong> olan Kayseri, geniş arazileri ve verimli topraklarıyla dikkat çekmektedir.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M32 4 L40 24 L56 24 L44 36 L48 56 L32 44 L16 56 L20 36 L8 24 L24 24 Z"/>
+                        </svg>
+                    </div>
+                    <h3>Erciyes Dağı</h3>
+                    <p>Şehrin hemen yanında yükselen Erciyes Dağı, Kayseri'ye eşsiz bir manzara ve kış turizmi potansiyeli kazandırmaktadır.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="32" cy="32" r="24"/>
+                            <path d="M32 16v16l8 8"/>
+                        </svg>
+                    </div>
+                    <h3>İklim</h3>
+                    <p>Karasal iklimin etkisi altında bulunan kentte yazlar sıcak ve kurak, kışlar ise soğuk ve kar yağışlı geçmektedir.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M8 32 L16 32 L20 24 L28 40 L36 28 L40 32 L56 32"/>
+                            <circle cx="32" cy="32" r="24"/>
+                        </svg>
+                    </div>
+                    <h3>Ulaşım</h3>
+                    <p>İstanbul, Ankara ve İzmir gibi büyük şehirlere yakınlığı ve ulaşım ağlarıyla bölgenin önemli lojistik merkezi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="section history" id="history">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Tarih</span>
+                <h2 class="section-title">Binlerce Yıllık Miras</h2>
+                <p class="section-subtitle">Antik dönemlerden günümüze uzanan zengin tarih</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">M.Ö. 2000</span>
+                        <h3>Kültepe (Kaniş)</h3>
+                        <p>Dünyanın ilk organize ticaret merkezi. Asur ticaret kolonilerine ev sahipliği yapmış, şehrin ticari geçmişinin ne kadar eskilere dayandığını kanıtlamaktadır.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Antik Çağ</span>
+                        <h3>Birçok Medeniyet</h3>
+                        <p>Frigya, Lidya, Pers, Büyük İskender, Roma ve Bizans gibi birçok medeniyetin topraklarında bulunan Kayseri, her dönemden izler taşımaktadır.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Roma Dönemi</span>
+                        <h3>Caesarea</h3>
+                        <p>Sezar Augustus'un onuruna "Caesarea" olarak değiştirilen şehir adı, zamanla "Kayseri"ye dönüşmüştür.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">1080</span>
+                        <h3>Selçuklular Dönemi</h3>
+                        <p>Anadolu Selçuklu Devleti'nin önemli kültür ve ticaret merkezi. Medreseler, camiler, kümbetler ve mimari eserler inşa edildi.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">1243</span>
+                        <h3>Kösedağ Savaşı</h3>
+                        <p>Moğol baskısına maruz kalan şehir, Dulkadiroğulları ve Karamanoğulları beyliklerinin sınırları içinde yer aldı.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Osmanlı Dönemi</span>
+                        <h3>Osmanlı İmparatorluğu</h3>
+                        <p>Önemini koruyan Kayseri, ticaret ve el sanatları konusunda gelişimini sürdürdü.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">1920</span>
+                        <h3>Kurtuluş Savaşı</h3>
+                        <p>Şehir işgalden kurtulmak için büyük mücadele verdi ve düşmandan temizlendi.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Cumhuriyet</span>
+                        <h3>Modern Kayseri</h3>
+                        <p>Sanayileşme hamleleriyle hızla modernleşen Kayseri, tarihi mirasını modern yapıyla harmanlayan bir şehir kimliği kazandı.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Economy Section -->
+    <section class="section economy" id="economy">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Ekonomi</span>
+                <h2 class="section-title">Güçlü Ekonomi</h2>
+                <p class="section-subtitle">Anadolu sanayisinin önemli merkezi</p>
+            </div>
+            <div class="economy-content">
+                <div class="economy-stats">
+                    <div class="economy-stat">
+                        <span class="e-stat-value">$5.2B</span>
+                        <span class="e-stat-label">Dış Ticaret Hacmi</span>
+                    </div>
+                    <div class="economy-stat">
+                        <span class="e-stat-value">%8.9</span>
+                        <span class="e-stat-label">İşsizlik Oranı</span>
+                    </div>
+                    <div class="economy-stat">
+                        <span class="e-stat-value">1st</span>
+                        <span class="e-stat-label">Mobilya Sektörü</span>
+                    </div>
+                </div>
+                <div class="economy-sectors">
+                    <h3>Önde Sektörler</h3>
+                    <div class="sector-grid">
+                        <div class="sector-card">
+                            <div class="sector-icon">🪑</div>
+                            <h4>Mobilya</h4>
+                            <p>Türkiye'de lider konumda, "mobilyanın başkenti" unvanı</p>
+                        </div>
+                        <div class="sector-card">
+                            <div class="sector-icon">👕</div>
+                            <h4>Tekstil</h4>
+                            <p>Önemli üretim ve ihracat kapasitesi</p>
+                        </div>
+                        <div class="sector-card">
+                            <div class="sector-icon">🍖</div>
+                            <h4>Et Ürünleri</h4>
+                            <p>Pastırma ve sucukta dünya çapında ün</p>
+                        </div>
+                        <div class="sector-card">
+                            <div class="sector-icon">⚙️</div>
+                            <h4>Makine & Metal</h4>
+                            <p>Sanayinin backbone omurgası</p>
+                        </div>
+                        <div class="sector-card">
+                            <div class="sector-icon">🌾</div>
+                            <h4>Tarım</h4>
+                            <p>Şeker pancarı, buğday ve patates üretimi</p>
+                        </div>
+                        <div class="sector-card">
+                            <div class="sector-icon">✈️</div>
+                            <h4>Havacılık</h4>
+                            <p>Savunma sanayii yatırımları</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cuisine Section -->
+    <section class="section cuisine" id="cuisine">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Gastronomi</span>
+                <h2 class="section-title">Kayseri Mutfağı</h2>
+                <p class="section-subtitle">Anadolu'nun en zengin mutfaklarından biri</p>
+            </div>
+            <div class="cuisine-grid">
+                <div class="cuisine-card featured">
+                    <div class="cuisine-image" style="background-image: url('https://images.pexels.com/photos/20523215/pexels-photo-20523215.jpeg?auto=compress&cs=tinysrgb&w=800')">
+                    </div>
+                    <div class="cuisine-content">
+                        <span class="cuisine-badge">En Meşhur</span>
+                        <h3>Kayseri Mantısı</h3>
+                        <p>Küçük hamur parçalarının içine kıyma konularak hazırlanan şehrin en meşhur lezzeti. Dünyaca ünlü bir tat.</p>
+                    </div>
+                </div>
+                <div class="cuisine-card" style="background-image: url('https://images.pexels.com/photos/7259912/pexels-photo-7259912.jpeg?auto=compress&cs=tinysrgb&w=600'); background-size: cover; background-position: center;">
+                    <div class="cuisine-overlay"></div>
+                    <div class="cuisine-content-text">
+                        <h4>Tepsi Mantısı</h4>
+                        <p>Katmanlar şeklinde tepsiye dizilen mantıların fırında pişirilmesiyle yapılan Kayseri klasiği.</p>
+                    </div>
+                </div>
+                <div class="cuisine-card" style="background-image: url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600'); background-size: cover; background-position: center;">
+                    <div class="cuisine-overlay"></div>
+                    <div class="cuisine-content-text">
+                        <h4>Pastırma & Sucuk</h4>
+                        <p>Özel yöntemlerle işlenen ve kurutulan etten elde edilen dünya çapında ünlü lezzet.</p>
+                    </div>
+                </div>
+                <div class="cuisine-card" style="background-image: url('https://images.pexels.com/photos/16007227/pexels-photo-16007227.jpeg?auto=compress&cs=tinysrgb&w=600'); background-size: cover; background-position: center;">
+                    <div class="cuisine-overlay"></div>
+                    <div class="cuisine-content-text">
+                        <h4>Türk Pidesi</h4>
+                        <p>Develi Cıvıklısı gibi Kayseri'ye özgü özel pide çeşitleri.</p>
+                    </div>
+                </div>
+                <div class="cuisine-card" style="background-image: url('https://images.pexels.com/photos/12609482/pexels-photo-12609482.jpeg?auto=compress&cs=tinysrgb&w=600'); background-size: cover; background-position: center;">
+                    <div class="cuisine-overlay"></div>
+                    <div class="cuisine-content-text">
+                        <h4>Geleneksel Çorbalar</h4>
+                        <p>Arabaşı ve daha birçok doyurucu çorba ile Kayseri mutfağı.</p>
+                    </div>
+                </div>
+                <div class="cuisine-card" style="background-image: url('https://images.pexels.com/photos/7259912/pexels-photo-7259912.jpeg?auto=compress&cs=tinysrgb&w=600'); background-size: cover; background-position: center;">
+                    <div class="cuisine-overlay"></div>
+                    <div class="cuisine-content-text">
+                        <h4>Kebap Çeşitleri</h4>
+                        <p>Pöç kebabı ve daha birçok kebap türü.</p>
+                    </div>
+                </div>
+                <div class="cuisine-card" style="background-image: url('https://images.pexels.com/photos/12609482/pexels-photo-12609482.jpeg?auto=compress&cs=tinysrgb&w=600'); background-size: cover; background-position: center;">
+                    <div class="cuisine-overlay"></div>
+                    <div class="cuisine-content-text">
+                        <h4>Pilav</h4>
+                        <p>Örgülü pilav gibi şehre has pilaf çeşitleri.</p>
+                    </div>
+                </div>
+                <div class="cuisine-card" style="background-image: url('https://images.pexels.com/photos/20523215/pexels-photo-20523215.jpeg?auto=compress&cs=tinysrgb&w=600'); background-size: cover; background-position: center;">
+                    <div class="cuisine-overlay"></div>
+                    <div class="cuisine-content-text">
+                        <h4>Yağlama</h4>
+                        <p>Katmanlı yufka arasında kıyma ve soğunun harmanlandığı geleneksel lezzet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Places Section -->
+    <section class="section places" id="places">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Turizm</span>
+                <h2 class="section-title">Gezilecek Tarihi Yerler</h2>
+                <p class="section-subtitle">Selçuklu, Osmanlı ve daha eski dönemlerden kalan eserler</p>
+            </div>
+            <div class="places-grid">
+                <div class="place-card">
+                    <div class="place-image-wrapper" style="background-image: url('https://images.pexels.com/photos/34420095/pexels-photo-34420095.jpeg?auto=compress&cs=tinysrgb&w=800'); background-size: cover; background-position: center;">
+                        <div class="place-overlay"></div>
+                    </div>
+                    <div class="place-content">
+                        <span class="place-tag">Selçuklu</span>
+                        <h3>Selçuklu Mimarisii</h3>
+                        <p>Selçuklu döneminde kalma, günümüzde Selçuklu Uygarlığı Müzesi olarak hizmet veren önemli tarihi yapı.</p>
+                    </div>
+                </div>
+                <div class="place-card">
+                    <div class="place-image-wrapper" style="background-image: url('https://images.pexels.com/photos/15447501/pexels-photo-15447501.jpeg?auto=compress&cs=tinysrgb&w=800'); background-size: cover; background-position: center;">
+                        <div class="place-overlay"></div>
+                    </div>
+                    <div class="place-content">
+                        <span class="place-tag">Kale</span>
+                        <h3>Kayseri Kalesi</h3>
+                        <p>Şehrin tarihi merkezinde yer alan ve geçmişten günümüze uzanan surlarıyla dikkat çeken anıtsal yapı.</p>
+                    </div>
+                </div>
+                <div class="place-card">
+                    <div class="place-image-wrapper" style="background-image: url('https://images.pexels.com/photos/15982123/pexels-photo-15982123.jpeg?auto=compress&cs=tinysrgb&w=800'); background-size: cover; background-position: center;">
+                        <div class="place-overlay"></div>
+                    </div>
+                    <div class="place-content">
+                        <span class="place-tag">Cami</span>
+                        <h3>Ulu Cami</h3>
+                        <p>Şehrin en eski ve en büyük camilerinden biri. Tarihi ve dini açıdan büyük önem taşıyor.</p>
+                    </div>
+                </div>
+                <div class="place-card">
+                    <div class="place-image-wrapper" style="background-image: url('https://images.pexels.com/photos/34420095/pexels-photo-34420095.jpeg?auto=compress&cs=tinysrgb&w=800'); background-size: cover; background-position: center;">
+                        <div class="place-overlay"></div>
+                    </div>
+                    <div class="place-content">
+                        <span class="place-tag">Selçuklu</span>
+                        <h3>Döner Kümbet</h3>
+                        <p>Selçuklu mimarisinin en güzel örneklerinden. Dairesel yapısı ve süslemeleriyle görenleri etkiliyor.</p>
+                    </div>
+                </div>
+                <div class="place-card">
+                    <div class="place-image-wrapper" style="background-image: url('https://images.pexels.com/photos/15447501/pexels-photo-15447501.jpeg?auto=compress&cs=tinysrgb&w=800'); background-size: cover; background-position: center;">
+                        <div class="place-overlay"></div>
+                    </div>
+                    <div class="place-content">
+                        <span class="place-tag">Simge</span>
+                        <h3>Saat Kulesi</h3>
+                        <p>19. yüzyılda inşa edilen şehrin simgesi. Şehir merkezine karakteristik görünüm katıyor.</p>
+                    </div>
+                </div>
+                <div class="place-card">
+                    <div class="place-image-wrapper" style="background-image: url('https://images.pexels.com/photos/15982123/pexels-photo-15982123.jpeg?auto=compress&cs=tinysrgb&w=800'); background-size: cover; background-position: center;">
+                        <div class="place-overlay"></div>
+                    </div>
+                    <div class="place-content">
+                        <span class="place-tag">Müze</span>
+                        <h3>Arkeoloji Müzesi</h3>
+                        <p>Melikgazi ilçesinde yer alan ve bölgenin tarihi eserlerini sergileyen önemli kültür merkezi.</p>
+                    </div>
+                </div>
+                <div class="place-card">
+                    <div class="place-image-wrapper" style="background-image: url('https://images.pexels.com/photos/34420095/pexels-photo-34420095.jpeg?auto=compress&cs=tinysrgb&w=800'); background-size: cover; background-position: center;">
+                        <div class="place-overlay"></div>
+                    </div>
+                    <div class="place-content">
+                        <span class="place-tag">Müze</span>
+                        <h3>Atatürk Evi</h3>
+                        <p>Büyük Önder'in Kayseri ziyaretlerinde kaldığı ev olarak müzeye dönüştürülmüş tarihi yapı.</p>
+                    </div>
+                </div>
+                <div class="place-card">
+                    <div class="place-image-wrapper" style="background-image: url('https://images.pexels.com/photos/15447501/pexels-photo-15447501.jpeg?auto=compress&cs=tinysrgb&w=800'); background-size: cover; background-position: center;">
+                        <div class="place-overlay"></div>
+                    </div>
+                    <div class="place-content">
+                        <span class="place-tag">Müze</span>
+                        <h3>Mimar Sinan Evi</h3>
+                        <p>Dünyaca ünlü mimarın Kayseri'deki doğum evi. Hayatını anlatan önemli bir mekan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Universities Section -->
+    <section class="section universities" id="universities">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Eğitim</span>
+                <h2 class="section-title">Üniversiteler</h2>
+                <p class="section-subtitle">Bölgenin önemli eğitim merkezi</p>
+            </div>
+            <div class="university-list">
+                <div class="university-card">
+                    <div class="uni-badge">Devlet</div>
+                    <div class="uni-content">
+                        <h3>Erciyes Üniversitesi</h3>
+                        <p class="uni-year">Kuruluş: 1978</p>
+                        <p>Türkiye'nin en köklü devlet üniversitelerinden biri. Diş hekimliği, eczacılık, edebiyat, eğitim, fen ve güzel sanatlar gibi birçok fakülteyle geniş akademik yelpazeye sahip.</p>
+                        <div class="uni-stats">
+                            <span>🏥 Araştırma Hastanesi</span>
+                            <span>📚 Geniş Fakülte</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <div class="uni-badge">Devlet</div>
+                    <div class="uni-content">
+                        <h3>Kayseri Üniversitesi</h3>
+                        <p class="uni-year">Kuruluş: 2018 | Öğrenci: 14.810</p>
+                        <p>Bilgisayar mühendisliği, yazılım mühendisliği ve çocuk gelişimi gibi güncel programlarla büyümesini sürdürüyor.</p>
+                        <div class="uni-stats">
+                            <span>💻 Yazılım Müh. (375+)</span>
+                            <span>📈 Yeni Nesil</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <div class="uni-badge">Devlet</div>
+                    <div class="uni-content">
+                        <h3>Abdullah Gül Üniversitesi</h3>
+                        <p class="uni-year">3. Nesil Devlet</p>
+                        <p>Tüm bölümlerde %100 İngilizce eğitim veren yenilikçi yapı. Modern kampüs ve international outlook.</p>
+                        <div class="uni-stats">
+                            <span>🌍 %100 İngilizce</span>
+                            <span>🚀 İnovatif</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="university-card">
+                    <div class="uni-badge">Vakıf</div>
+                    <div class="uni-content">
+                        <h3>Nuh Naci Yazgan Üniversitesi</h3>
+                        <p class="uni-year">Vakıf Üniversitesi</p>
+                        <p>Farklı lisans ve lisansüstü programlarla eğitime katkı sağlayan şehrin tek vakıf üniversitesi.</p>
+                        <div class="uni-stats">
+                            <span>🎓 Lisansüstü</span>
+                            <span>💎 Vakıf</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uni-summary">
+                <p>Toplam <strong>70.000+</strong> öğrenciye eğitim veren Kayseri, bölgenin önemli yükseköğretim merkezi.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture Section -->
+    <section class="section culture" id="culture">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Kültür</span>
+                <h2 class="section-title">Kültür & Sanat</h2>
+                <p class="section-subtitle">Zengin tarihi miras ve yaşayan kültürel doku</p>
+            </div>
+            <div class="culture-content">
+                <div class="culture-feature">
+                    <div class="feature-icon">🎭</div>
+                    <div class="feature-text">
+                        <h3>Kültür Yolu Festivali</h3>
+                        <p>6-14 Eylül 2025 tarihlerinde Türkiye Kültür Yolu Festivali'ne ev sahipliği yapacak.</p>
+                    </div>
+                </div>
+                <div class="culture-feature">
+                    <div class="feature-icon">🕌</div>
+                    <div class="feature-text">
+                        <h3>Selçuklu Mirası</h3>
+                        <p>Selçuklu döneminde inşa edilen eserler, şehrin İslam ve Türk kültürüyle yoğrulmuş dokusunu yansıtıyor.</p>
+                    </div>
+                </div>
+                <div class="culture-feature">
+                    <div class="feature-icon">🤝</div>
+                    <div class="feature-text">
+                        <h3>Misafirperverlik</h3>
+                        <p>Kayseri halkı, misafirperverlikleri ve dayanışma kültürleriyle Türk toplumunun geleneksel değerlerini koruyor.</p>
+                    </div>
+                </div>
+                <div class="culture-feature">
+                    <div class="feature-icon">🎪</div>
+                    <div class="feature-text">
+                        <h3>Festivaller & Etkinlikler</h3>
+                        <p>Çeşitli festivaller, sergiler ve kültürel etkinlikler yerel halkın ve ziyaretçilerin sosyal yaşamlarını renklendiriyor.</p>
+                    </div>
+                </div>
+                <div class="culture-feature">
+                    <div class="feature-icon">🏪</div>
+                    <div class="feature-text">
+                        <h3>Tarihi Çarşılar</h3>
+                        <p>Bedesten ve kapalıçarşı, geleneksel ticaret kültürünü günümüze taşıyan önemli mekânlar.</p>
+                    </div>
+                </div>
+                <div class="culture-feature">
+                    <div class="feature-icon">🍽️</div>
+                    <div class="feature-text">
+                        <h3>Gastronomi</h3>
+                        <p>Kayseri mutfağı UNESCO Somut Olmayan Kültürel Miras listesine aday olma potansiyeli taşıyor.</p>
+                    </div>
+                </div>
+                <div class="culture-feature">
+                    <div class="feature-icon">💃</div>
+                    <div class="feature-text">
+                        <h3>Halk Oyunları</h3>
+                        <p>Folklor ekibi ve yerel müzik grupları şehrin kültürel kimliğini koruyor ve yaşıtıyor.</p>
+                    </div>
+                </div>
+                <div class="culture-feature">
+                    <div class="feature-icon">🎨</div>
+                    <div class="feature-text">
+                        <h3>El Sanatları</h3>
+                        <p>Bakırcılık, halıcılık ve seramik alanında ulusal ve uluslararası alanda takdir gören ürünler.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <svg class="logo-icon" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Erciyes Dağı Silüeti -->
+                        <path d="M20 100 L35 70 L50 85 L60 55 L75 75 L85 50 L100 100 Z" fill="currentColor" opacity="0.15"/>
+                        <path d="M30 100 L45 65 L60 80 L70 45 L85 70 L95 100 Z" fill="currentColor" opacity="0.25"/>
+                        <!-- Kar tepesi -->
+                        <path d="M55 30 L60 45 L70 45 L65 50 L70 55 L60 55 L55 65 L50 55 L40 55 L45 50 L40 45 L50 45 Z" fill="currentColor" opacity="0.4"/>
+                        <!-- Dış çerçeve -->
+                        <circle cx="60" cy="60" r="52" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+                        <!-- Mantı şekilleri (sembolik) -->
+                        <circle cx="25" cy="95" r="6" fill="currentColor" opacity="0.3"/>
+                        <circle cx="95" cy="95" r="6" fill="currentColor" opacity="0.3"/>
+                        <circle cx="60" cy="105" r="5" fill="currentColor" opacity="0.3"/>
+                    </svg>
+                    <h3>KAYSERİ</h3>
+                    <p>Anadolu'nun Kalbi</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="#about">Hakkında</a></li>
+                        <li><a href="#history">Tarih</a></li>
+                        <li><a href="#economy">Ekonomi</a></li>
+                        <li><a href="#cuisine">Mutfağı</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Keşfet</h4>
+                    <ul>
+                        <li><a href="#places">Gezilecek Yerler</a></li>
+                        <li><a href="#universities">Üniversiteler</a></li>
+                        <li><a href="#culture">Kültür</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h4>İletişim</h4>
+                    <p>Kayseri, Türkiye</p>
+                    <p>info@kayseri.gov.tr</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kayseri. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

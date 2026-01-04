@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(start \"\" \"C:\\\\Users\\\\user\\\\Desktop\\\\Kayseri\\\\index.html\")",
+      "Bash(git add:*)"
+    ]
+  }
+}
