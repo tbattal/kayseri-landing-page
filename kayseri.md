@@ -3,6 +3,7 @@
 ## 📊 Temel Bilgiler
 
 Kayseri, İç Anadolu Bölgesi'nde yer alan ve Türkiye'nin en önemli şehirlerinden biri olarak tarihi boyunca stratejik bir konumda bulunmuştur. Şehir, 2025 yılı itibarıyla 1 milyon 452 bin 458 kişilik nüfusuyla Türkiye'nin en kalabalık on beşinci ili olarak kayıtlara geçmiştir. Nüfusun neredeyse eşit bir şekilde dağıldığı şehirde erkek nüfus 725 bin 633 iken, kadın nüfus 726 bin 825 kişiden oluşmaktadır. Yüzölçümü bakımından Türkiye'nin sekizinci büyük ili olan Kayseri, geniş arazileri ve veriley topraklarıyla da dikkat çekmektedir. Şehir, denize kıyısı olmamasına rağmen merkezi konumu sayesinde tarihi ticaret yolları üzerinde kilit bir rol oynamıştır. Kayseri, coğrafi konumu itibarıyla Anadolu'nun kalbinde yer alması nedeniyle birçok medeniyete ev sahipliği yapmış zengin bir geçmişe sahiptir. İklim olarak karasal iklimin etkisi altında bulunan kentte yazlar sıcak ve kurak, kışlar ise soğuk ve kar yağışlı geçmektedir. Erciyes Dağı'nın şehrin hemen yanında yükselmesi, Kayseri'ye eşsiz bir manzara ve kış turizmi potansiyeli kazandırmaktadır. Şehir merkezi ve ilçeleriyle birlikte hem tarihi hem de modern yaşamın bir arada sürdürüldüğü dinamik bir yapıya sahiptir. Kayseri, İstanbul, Ankara ve İzmir gibi büyük şehirlere olan yakınlığı ve ulaşım ağlarıyla da bölgenin önemli bir lojistik merkezi konumundadır.
+Kayseri
 
 ## 🏛️ Tarih
 
